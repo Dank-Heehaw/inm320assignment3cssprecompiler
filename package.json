@@ -1,0 +1,26 @@
+{
+  "name": "inm320assignment3cssprecompiler",
+  "version": "1.0.0",
+  "scripts": {
+    "gogogo": "lite-server --baseDir=\"tortoise\"",
+    "sassy": "sass --watch src/scss:tortoise/assets/css",
+    "start": "concurrently \"npm run sassy\" \"npm run gogogo\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dank-Heehaw/inm320assignment3cssprecompiler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dank-Heehaw/inm320assignment3cssprecompiler/issues"
+  },
+  "homepage": "https://github.com/Dank-Heehaw/inm320assignment3cssprecompiler#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.93.2"
+  }
+}
