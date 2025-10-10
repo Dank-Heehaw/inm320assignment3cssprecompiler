@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gogogo": "lite-server --baseDir=\"public\"",
+    "sassy": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run sassy\" \"npm run gogogo\""
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dank-Heehaw/inm320assignment3cssprecompiler.git"
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/Dank-Heehaw/inm320assignment3cssprecompiler#readme",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "lite-server": "^2.6.1",
     "sass": "^1.93.2"
   }
